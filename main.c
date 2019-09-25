@@ -50,7 +50,7 @@ void SetDriveSpeed(uint8_t speed){	//Процедура выставления опорной частоты для П
 
 static volatile uint16_t ADC_Data[3];
 static volatile float k[3];
-static volatile uint8_t kf[3] = { 2, 10, 25};
+static volatile uint8_t kf[3] = { 2, 25, 25};
 
 void ADC_GetData(void){				//Процедура получения данных с АЦП
 uint8_t ai_ch;
